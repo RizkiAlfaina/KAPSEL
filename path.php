@@ -1,4 +1,4 @@
 <?php
 
 define("ROOT_PATH", realpath(dirname(__FILE__)));
-define("BASE_URL", "http://localhost:3000/blog-php-mysqli");
+define("BASE_URL", "http://localhost:3000");

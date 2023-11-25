@@ -131,9 +131,56 @@ function delete($table, $id)
 function getPublishedPosts()
 {
     global $conn;
-    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=?";
+    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? ORDER BY p.created_at DESC";
 
     $stmt = executeQuery($sql, ['published' => 1]);
+    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    return $records;
+}
+
+function formatPostFields($posts)
+{
+    if (empty($posts)) {
+        return [];
+    }
+
+    $formattedPosts = [];
+    foreach ($posts as $post) {
+        $currentPost = $post;
+        $currentPost['body'] = html_entity_decode(substr($post['body'], 0, 150) . '...');
+        $currentPost['created_at'] = date('F j, Y', strtotime($post['created_at']));
+        $currentPost['image'] = BASE_URL . '/assets/images/' . $post['image'];
+        array_push($formattedPosts, $currentPost);
+    }
+    return $formattedPosts;
+}
+
+function getPaginatedPosts($currentPage = 1, $recordsPerPage = 3)
+{
+    global $conn;
+    $sql = "SELECT p.*, u.username FROM posts AS p 
+            JOIN users AS u ON p.user_id=u.id 
+            WHERE p.published=1 
+            ORDER BY p.created_at DESC LIMIT ?,?";
+    $data = [
+        'offset' => ($currentPage - 1) * $recordsPerPage,
+        'numberOfRecords' => $recordsPerPage
+    ];
+
+    $stmt = executeQuery($sql, $data);
+    $posts = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+
+    return [
+        'posts' => formatPostFields($posts),
+        'nextPage' => count($posts) < $recordsPerPage ? false : $currentPage + 1,
+    ];
+}
+
+function get_posts_with_username(){
+    global $conn;
+    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id ORDER BY p.created_at DESC";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;
 }
@@ -142,7 +189,7 @@ function getPublishedPosts()
 function getPostsByTopicId($topic_id)
 {
     global $conn;
-    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? AND topic_id=?";
+    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? AND topic_id=? ORDER BY p.created_at DESC";
 
     $stmt = executeQuery($sql, ['published' => 1, 'topic_id' => $topic_id]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -161,7 +208,7 @@ function searchPosts($term)
             JOIN users AS u 
             ON p.user_id=u.id 
             WHERE p.published=?
-            AND p.title LIKE ? OR p.body LIKE ?";
+            AND p.title LIKE ? OR p.body LIKE ? ORDER BY p.created_at DESC";
 
 
     $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);

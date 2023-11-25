@@ -13,6 +13,13 @@ if (isset($_GET['t_id'])) {
   $posts = searchPosts($_POST['search-term']);
 } else {
   $posts = getPublishedPosts();
+  $paginatedPosts = getPaginatedPosts();
+}
+
+if (isset($_GET['page']) && isset($_GET['ajax'])) {
+  $paginatedPosts = getPaginatedPosts($_GET['page']);
+  echo json_encode($paginatedPosts);
+  exit();
 }
 
 ?>
@@ -78,23 +85,28 @@ if (isset($_GET['t_id'])) {
 
       <!-- Main Content -->
       <div class="main-content">
-        <h1 class="recent-post-title"><?php echo $postsTitle ?></h1>
+        <div class="post-list">
+          <h1 class="recent-post-title"><?php echo $postsTitle ?></h1>
 
-        <?php foreach ($posts as $post): ?>
-          <div class="post clearfix">
-            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="post-image">
-            <div class="post-preview">
-              <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
-              <i class="far fa-user"> <?php echo $post['username']; ?></i>
-              &nbsp;
-              <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
-              <p class="preview-text">
-                <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
-              </p>
-              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
-            </div>
-          </div>    
-        <?php endforeach; ?>
+          <?php foreach ($paginatedPosts['posts'] as $post): ?>
+            <div class="post clearfix">
+              <img src="<?php echo $post['image']; ?>" alt="" class="post-image">
+              <div class="post-preview">
+                <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
+                <i class="far fa-user"> <?php echo $post['username']; ?></i>
+                &nbsp;
+                <i class="far fa-calendar"> <?php echo $post['created_at']; ?></i>
+                <p class="preview-text">
+                  <?php echo $post['body']; ?>
+                </p>
+                <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
+              </div>
+            </div>    
+          <?php endforeach; ?>
+        </div>
+        <div class="pagination-links" style="display: flex; justify-content: center;">
+          <button type="button" class="btn read-more load-more-btn">Load more</button>
+        </div>
         
 
 
@@ -115,7 +127,7 @@ if (isset($_GET['t_id'])) {
           <h2 class="section-title">Topics</h2>
           <ul>
             <?php foreach ($topics as $key => $topic): ?>
-              <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
+              <li><a href="<?php echo BASE_URL . '/news.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
             <?php endforeach; ?>
           </ul>
         </div>
@@ -139,6 +151,52 @@ if (isset($_GET['t_id'])) {
 
   <!-- Custom Script -->
   <script src="assets/js/scripts.js"></script>
+
+  <script>
+    const loadMoreBtn = document.querySelector('.load-more-btn');
+    const postList = document.querySelector('.post-list');
+    const paginationLinks = document.querySelector('.pagination-links'); 
+    
+    function displayPosts(posts) {
+      posts.forEach(post => {
+        let postHtmlString =`
+          <div class="post clearfix">
+            <img src="${post.image}" alt="" class="post-image">
+            <div class="post-preview">
+              <h2><a href="single.php?id=${post.id}">${post.title}</a></h2>
+              <i class="far fa-user"> ${post.username}</i>
+              &nbsp;
+              <i class="far fa-calendar"> ${post.created_at}</i>
+              <p class="preview-text">
+                ${post.body}
+              </p>
+              <a href="single.php?id=${post.id}" class="btn read-more">Read More</a>
+            </div>
+          </div>
+        `;
+        
+        const domParser = new DOMParser();
+        const doc = domParser.parseFromString(postHtmlString, 'text/html');
+        const postNode = doc.body.firstChild;
+        postList.appendChild(postNode);
+      });
+    }
+
+    let nextPage = 2;
+
+    loadMoreBtn.addEventListener('click', async function(e) {
+      loadMoreBtn.textContent = 'Loading...';
+      const response = await fetch(`news.php?page=${nextPage}&ajax=1`);
+      const data = await response.json();
+      displayPosts(data.posts);
+      nextPage = data.nextPage;
+      if (!data.nextPage) {
+        paginationLinks.innerHTML = '<div style="color: gray;">No more posts!</div>';
+      } else {
+        loadMoreBtn.textContent = 'Load more';        
+      }
+    });
+  </script>
 
 </body>
 
