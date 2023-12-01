@@ -108,8 +108,6 @@ if (isset($_GET['page']) && isset($_GET['ajax'])) {
           <button type="button" class="btn read-more load-more-btn">Load more</button>
         </div>
         
-
-
       </div>
       <!-- // Main Content -->
 

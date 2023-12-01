@@ -131,8 +131,8 @@ if (isset($_GET['page']) && isset($_GET['ajax'])) {
       </div>
       <div class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
         <h1 class="w-full text-center text-neutral-50 text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5">PUSAT INFORMASI</h1>
-        <form action="" class="w-[63%] mx-auto relative">
-          <input type="text" placeholder="Apa yang ingin anda cari?" class="w-full rounded-full p-5 box-border" />
+        <form action="informasi.php" class="w-[63%] mx-auto relative">
+          <input type="text" name="search-term" placeholder="Apa yang ingin anda cari?" class="w-full rounded-full p-5 box-border text-input" />
           <input type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 px-4 py-3 rounded-full bg-[#DFB86B]" />
         </form>
       </div>
@@ -169,48 +169,31 @@ if (isset($_GET['page']) && isset($_GET['ajax'])) {
         </section>
 
         <!-- News List -->
-        <section class="md:w-2/3">
+        <section class="md:w-2/3 post-list">
           <!-- News Piece -->
-          <div class="mb-4">
-            <img src="assets/images/carousel_1.jpeg" alt="" class="w-full" />
-            <div>
-              <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest">JUDUL BERITA</h2>
-              <div class="flex flex-wrap gap-2">
-                <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i>Admin</span>
-                <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i>Senin, 20 November 2023</span>
+          <?php foreach ($paginatedPosts['posts'] as $post): ?>
+            <div class="mb-4">
+              <img src="<?php echo $post['image']; ?>" alt="" class="w-full" />
+              <div>
+                <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i><?php echo $post['username']; ?></span>
+                  <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i><?php echo $post['created_at']; ?></span>
+                </div>
+              </div>
+              <div>
+                <p class="text-black font-normal font-SourceSans tracking-wide mb-2">
+                  <?php echo $post['body']; ?>
+                </p>
+                <a href="single.php?id=<?php echo $post['id']; ?>" class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg">Lihat Selengkapnya</a>
               </div>
             </div>
-            <div>
-              <p class="text-black font-normal font-SourceSans tracking-wide mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .............
-              </p>
-              <a href="" class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg">Lihat Selengkapnya</a>
-            </div>
+          <?php endforeach; ?>
+          <div class="pagination-links" style="display: flex; justify-content: center;">
+            <button type="button" class="btn read-more load-more-btn">Load more</button>
           </div>
           <!-- News Piece -->
-          <div class="mb-4">
-            <img src="assets/images/carousel_1.jpeg" alt="" class="w-full" />
-            <div>
-              <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest">JUDUL BERITA</h2>
-              <div class="flex flex-wrap gap-2">
-                <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i>Admin</span>
-                <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i>Senin, 20 November 2023</span>
-              </div>
-            </div>
-            <div>
-              <p class="text-black font-normal font-SourceSans tracking-wide mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .............
-              </p>
-              <a href="" class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg">Lihat Selengkapnya</a>
-            </div>
-          </div>
 
-          <!-- Pagination -->
-          <div>
-            <a href=""></a>
-          </div>
         </section>
       </div>
     </main>
@@ -250,5 +233,53 @@ if (isset($_GET['page']) && isset($_GET['ajax'])) {
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/hamburger.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script>
+      const loadMoreBtn = document.querySelector('.load-more-btn');
+      const postList = document.querySelector('.post-list');
+      const paginationLinks = document.querySelector('.pagination-links'); 
+      
+      function displayPosts(posts) {
+        posts.forEach(post => {
+          let postHtmlString =`
+            <div class="mb-4">
+              <img src="${post.image}" alt="" class="w-full" />
+              <div>
+                <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest"><a href="single.php?id=${post.id}">${post.title}</a></h2>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i>${post.username}</span>
+                  <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i>${post.created_at}</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-black font-normal font-SourceSans tracking-wide mb-2">
+                  ${post.body}
+                </p>
+                <a href="single.php?id=${post.id}" class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg">Lihat Selengkapnya</a>
+              </div>
+            </div>
+          `;
+          
+          const domParser = new DOMParser();
+          const doc = domParser.parseFromString(postHtmlString, 'text/html');
+          const postNode = doc.body.firstChild;
+          postList.appendChild(postNode);
+        });
+      }
+
+      let nextPage = 2;
+
+      loadMoreBtn.addEventListener('click', async function(e) {
+        loadMoreBtn.textContent = 'Loading...';
+        const response = await fetch(`informasi.php?page=${nextPage}&ajax=1`);
+        const data = await response.json();
+        displayPosts(data.posts);
+        nextPage = data.nextPage;
+        if (!data.nextPage) {
+          paginationLinks.innerHTML = '<div style="color: gray;">No more posts!</div>';
+        } else {
+          loadMoreBtn.textContent = 'Load more';        
+        }
+      });
+    </script>
   </body>
 </html>
