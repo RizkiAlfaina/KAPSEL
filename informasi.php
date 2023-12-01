@@ -114,6 +114,7 @@ if (isset($_GET['t_id'])) {
         <i class="fa-solid fa-chevron-right inline-block"></i>
         <p class="inline-block">News</p>
       </section>
+      <h1 class="text-black text-[32px] font-bold font-Montserrat tracking-widest"><?php echo $postsTitle ?></h1>
       <div class="flex flex-col-reverse py-3 md:flex-row gap-6">
         <!-- Filter -->
         <section class="bg-[#C6B7A3] px-[30px] py-5 flex flex-col gap-3 md:w-1/3 h-fit">
@@ -139,6 +140,7 @@ if (isset($_GET['t_id'])) {
 
         <!-- News List -->
         <section class="md:w-2/3 post-list">
+          
           <!-- News Piece -->
           <?php foreach ($posts as $post): ?>
             <div class="mb-4">
