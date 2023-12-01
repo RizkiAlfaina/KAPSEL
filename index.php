@@ -1,3 +1,22 @@
+<?php 
+include("path.php");
+include(ROOT_PATH . "/app/controllers/topics.php");
+
+$posts = array();
+$postsTitle = 'Recent Posts';
+
+if (isset($_GET['t_id'])) {
+  $posts = getPostsByTopicId($_GET['t_id']);
+  $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
+} else if (isset($_POST['search-term'])) {
+  $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
+  $posts = searchPosts($_POST['search-term']);
+} else {
+  $posts = getPublishedPosts();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,31 +88,7 @@
     </style>
   </head>
   <body class="overflow-x-hidden">
-    <header class="xl:absolute xl:z-50 w-full bg-[#655740] xl:bg-transparent flex flex-col box-border xl:flex-row xl:justify-between xl:items-center xl:px-[69px]">
-      <div class="flex justify-between px-3 py-6 items-center" id="top-bar">
-        <a href="" class="inline-block flex items-center gap-3">
-          <img class="w-[75px] xl:w-[100px] inline-block" src="assets/images/logo_sekolah.png" alt="" />
-          <div class="inline-block">
-            <h1 class="w-56 text-white text-lg font-extrabold font-Montserrat w-fit tracking-widest">SMKN 1</h1>
-            <h1 class="w-56 text-white text-lg font-extrabold font-Montserrat w-fit tracking-widest">PEKALONGAN</h1>
-            <p class="opacity-50 text-white text-xs font-semibold font-SourceSans w-fit tracking-[5px]">SMK Bisa - Hebat</p>
-          </div>
-        </a>
-        <button id="hamburger" name="hamburger" type="button" class="inline-block p-2 xl:hidden">
-          <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-        </button>
-      </div>
-      <nav class="flex flex-col px-4 justify-center gap-5 my-5 hidden xl:flex xl:flex-row xl:gap-11 xl:justify-normal xl:px-0" id="nav-menu">
-        <a href="" class="text-white font-Montserrat text-xl">PROFIL</a>
-        <a href="" class="text-white font-Montserrat text-xl">INFORMASI</a>
-        <a href="" class="text-white font-Montserrat text-xl">KEJURUAN</a>
-        <a href="" class="text-white font-Montserrat text-xl">EKSTRAKURIKULER</a>
-        <a href="" class="text-white font-Montserrat text-xl">KONTAK</a>
-      </nav>
-      <a href="" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0" id="login">LOG IN</a>
-    </header>
+  <?php include(ROOT_PATH . "/app/includes/headerreal.php"); ?>
     <!-- Slider main container -->
     <section class="hero-swiper relative">
       <!-- Additional required wrapper -->
@@ -254,38 +249,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[#655740] flex items-center flex-col gap-10 md:gap-0 md:flex-row py-10 justify-between">
-      <div class="flex items-center gap-5 md:gap-14 flex-col md:flex-row">
-        <div class="flex gap-7 border-0 md:border md:border-r-2 md:border-y-0 md:border-l-0 md:border-r-white">
-          <img class="w-[100px]" src="assets/images/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
-          <div class="inline-block flex flex-col justify-end">
-            <h1 class="w-56 text-white text-lg font-extrabold font-['Montserrat'] uppercase leading-[23px] tracking-widest">SMKN 1 PEKALONGAN</h1>
-            <p class="w-[185px] h-[38px] opacity-50 text-white text-xs font-semibold font-['Source Sans 3'] capitalize tracking-[5px]">SMK Bisa - Hebat</p>
-          </div>
-        </div>
-        <div class="text-white font-Montaga flex flex-col gap-2">
-          <div class="flex items-center gap-3">
-            <i class="fa-solid fa-map inline-block align-middle"></i>
-            <p class="inline-block w-72 leading-4 tracking-wide">Jl. Bengkok No.29, Sidodadi, Kec. Pekalongan, Kabupaten Lampung Timur, Lampung 34381</p>
-          </div>
-          <div class="flex items-center gap-3">
-            <i class="fa-solid fa-phone"></i>
-            <p class="inline-block">0721-8888-9999</p>
-          </div>
-        </div>
-      </div>
-      <div class="text-white flex flex-row gap-7">
-        <a href="">
-          <i class="fa-brands fa-square-facebook fa-2xl"></i>
-        </a>
-        <a href="">
-          <i class="fa-brands fa-twitter fa-2xl"></i>
-        </a>
-        <a href="">
-          <i class="fa-brands fa-instagram fa-2xl"></i>
-        </a>
-      </div>
-    </footer>
+    <?php include(ROOT_PATH . "/app/includes/footerreal.php"); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/hamburger.js"></script>
