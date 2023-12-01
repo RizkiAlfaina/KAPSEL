@@ -143,18 +143,17 @@ if (isset($_GET['t_id'])) {
           <div>
             <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest underline underline-offset-8 mb-3">CATEGORY</h2>
             <ul class="text-black text-base font-normal font-SourceSans capitalize tracking-widest pl-4">
-              <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2">Berita Sekolah</li>
-              <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2">Pembelajaran</li>
-              <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2">Info Sekolah</li>
+              <?php foreach ($topics as $key => $topic): ?>
+                <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2"><a href="<?php echo BASE_URL . '/informasi.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
+              <?php endforeach; ?>
             </ul>
           </div>
           <div>
             <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest underline underline-offset-8 mb-3">Archives</h2>
             <ul class="text-black text-base font-normal font-SourceSans capitalize tracking-widest pl-4">
-              <?php foreach ($topics as $key => $topic): ?>
-                <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2"><a href="<?php echo BASE_URL . '/informasi.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
-              <?php endforeach; ?>
-              </ul>
+              <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2">Des 2023</li>
+              <li class="border border-b-[1px] border-x-0 border-t-0 border-black border-dashed pb-2">Nov 2023</li>
+            </ul>
           </div>
           <div>
             <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest underline underline-offset-8 mb-3">Follow Us</h2>
