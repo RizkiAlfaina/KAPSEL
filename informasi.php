@@ -8,9 +8,10 @@ $postsTitle = 'Recent Posts';
 if (isset($_GET['t_id'])) {
   $posts = getPostsByTopicId($_GET['t_id']);
   $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
-} else if (isset($_POST['search-term'])) {
-  $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
-  $posts = searchPosts($_POST['search-term']);
+} else if (isset($_POST['search-term']) || isset($_POST['search-term1'])) {
+  $searchTerm = isset($_POST['search-term']) ? $_POST['search-term'] : $_POST['search-term1'];
+  $postsTitle = "You searched for '" . $searchTerm . "'";
+  $posts = searchPosts($searchTerm);
 } else {
   $posts = getPublishedPosts();
 }

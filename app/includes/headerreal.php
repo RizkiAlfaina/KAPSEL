@@ -18,8 +18,8 @@
         <a href="<?php echo BASE_URL . '/index.php' ?>" class="text-white font-Montserrat text-xl">PROFIL</a>
         <a href="<?php echo BASE_URL . '/informasi.php' ?>" class="text-white font-Montserrat text-xl">INFORMASI</a>
         <a href="" class="text-white font-Montserrat text-xl">KEJURUAN</a>
-        <a href="" class="text-white font-Montserrat text-xl">EKSTRAKURIKULER</a>
-        <a href="" class="text-white font-Montserrat text-xl">KONTAK</a>
+        <a href="<?php echo BASE_URL . '/ekstrakurikuler.php' ?>" class="text-white font-Montserrat text-xl">EKSTRAKURIKULER</a>
+        <a href="#kontak" class="text-white font-Montserrat text-xl">KONTAK</a>
       </nav>
       <?php if (isset($_SESSION['id'])): ?>
           <a href="#" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0">

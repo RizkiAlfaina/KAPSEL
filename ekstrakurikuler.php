@@ -1,3 +1,22 @@
+<?php 
+include("path.php");
+include(ROOT_PATH . "/app/controllers/topics.php");
+
+$posts = array();
+$postsTitle = 'Recent Posts';
+
+if (isset($_GET['t_id'])) {
+  $posts = getPostsByTopicId($_GET['t_id']);
+  $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
+} else if (isset($_POST['search-term'])) {
+  $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
+  $posts = searchPosts($_POST['search-term']);
+} else {
+  $posts = getPublishedPosts();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,31 +89,7 @@
     </style>
   </head>
   <body>
-    <header class="xl:absolute xl:z-50 w-full bg-[#655740] xl:bg-transparent flex flex-col box-border xl:flex-row xl:justify-between xl:items-center xl:px-[69px]">
-      <div class="flex justify-between px-3 py-6 items-center" id="top-bar">
-        <a href="" class="inline-block flex items-center gap-3">
-          <img class="w-[75px] xl:w-[100px] inline-block" src="../assets/images/logo_sekolah.png" alt="" />
-          <div class="inline-block">
-            <h1 class="w-56 text-white text-lg font-extrabold font-Montserrat w-fit tracking-widest">SMKN 1</h1>
-            <h1 class="w-56 text-white text-lg font-extrabold font-Montserrat w-fit tracking-widest">PEKALONGAN</h1>
-            <p class="opacity-50 text-white text-xs font-semibold font-SourceSans w-fit tracking-[5px]">SMK Bisa - Hebat</p>
-          </div>
-        </a>
-        <button id="hamburger" name="hamburger" type="button" class="inline-block p-2 xl:hidden">
-          <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line transition duration-300 ease-in-out"></span>
-          <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-        </button>
-      </div>
-      <nav class="flex flex-col px-4 justify-center gap-5 my-5 hidden xl:flex xl:flex-row xl:gap-11 xl:justify-normal xl:px-0" id="nav-menu">
-        <a href="" class="text-white font-Montserrat text-xl">PROFIL</a>
-        <a href="" class="text-white font-Montserrat text-xl">INFORMASI</a>
-        <a href="" class="text-white font-Montserrat text-xl">KEJURUAN</a>
-        <a href="" class="text-white font-Montserrat text-xl">EKSTRAKURIKULER</a>
-        <a href="" class="text-white font-Montserrat text-xl">KONTAK</a>
-      </nav>
-      <a href="" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0" id="login">LOG IN</a>
-    </header>
+    <?php include(ROOT_PATH . "/app/includes/headerreal.php"); ?>
     <!-- Slider main container -->
     <section class="hero-swiper relative">
       <!-- Additional required wrapper -->
@@ -106,10 +101,6 @@
       </div>
       <div class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
         <h1 class="w-full text-center text-neutral-50 text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5">EKSTRAKURIKULER</h1>
-        <form action="" class="w-[63%] mx-auto relative">
-          <input type="text" placeholder="Apa yang ingin anda cari?" class="w-full rounded-full p-5 box-border" />
-          <input type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 px-4 py-3 rounded-full bg-[#DFB86B]" />
-        </form>
       </div>
     </section>
     <main class="px-3 md:px-10 mb-10">

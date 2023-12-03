@@ -2,7 +2,7 @@
       <div class="flex items-center gap-5 md:gap-14 flex-col md:flex-row">
         <div class="flex gap-7 border-0 md:border md:border-r-2 md:border-y-0 md:border-l-0 md:border-r-white">
           <img class="w-[100px]" src="assets/images/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
-          <div class="inline-block flex flex-col justify-end">
+          <div id="kontak" class="inline-block flex flex-col justify-end">
             <h1 class="w-56 text-white text-lg font-extrabold font-['Montserrat'] uppercase leading-[23px] tracking-widest">SMKN 1 PEKALONGAN</h1>
             <p class="w-[185px] h-[38px] opacity-50 text-white text-xs font-semibold font-['Source Sans 3'] capitalize tracking-[5px]">SMK Bisa - Hebat</p>
           </div>
