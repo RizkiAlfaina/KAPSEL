@@ -22,18 +22,18 @@
         <a href="#kontak" class="text-white font-Montserrat text-xl">KONTAK</a>
       </nav>
       <?php if (isset($_SESSION['id'])): ?>
-          <a href="#" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0">
+          <div class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0 relative group" id="login">
             <i class="fa fa-user"></i>
             <?php echo $_SESSION['username']; ?>
             <i class="fa fa-chevron-down"></i>
-          </a>
-          <ul>
-            <?php if($_SESSION['admin']): ?>
-              <a href="<?php echo BASE_URL . '/admin/dashboard.php' ?>" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0">Dashboard</a>
-            <?php endif; ?>
-            <a href="<?php echo BASE_URL . '/logout.php' ?>" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0">Logout</a>
-          </ul>        
+            <div class="block xl:hidden group-hover:block xl:absolute top-fdivl xl:text-right right-0 mt-1.5">
+              <?php if($_SESSION['admin']): ?>
+              <a href="<?php echo BASE_URL . '/admin/dashboard.php' ?>" class="text-white font-Montserrat text-xl xl:px-4 font-bold mb-4 mt-4 xl:mt-0 xl:mb-5 block xl:mb-0">Dashboard</a>
+              <?php endif; ?>
+              <a href="<?php echo BASE_URL . '/logout.php' ?>" class="text-white font-Montserrat text-xl xl:px-4 font-bold mb-4 xl:mb-5 block xl:mb-0 mt-1.5">Logout</a>
+            </div>        
+          </div>
       <?php else: ?>
-        <a href="<?php echo BASE_URL . '/login.php' ?>" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0">Login</a>
+        <a href="<?php echo BASE_URL . '/login.php' ?>" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0" id="login">Login</a>
       <?php endif; ?>
     </header>

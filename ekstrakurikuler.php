@@ -95,9 +95,9 @@ if (isset($_GET['t_id'])) {
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="../assets/images/carousel_1.jpeg" alt="" class="w-full brightness-50" /></div>
-        <div class="swiper-slide"><img src="../assets/images/carousel_2.jpeg" alt="" class="w-full brightness-50" /></div>
-        <div class="swiper-slide"><img src="../assets/images/carousel_3.jpeg" alt="" class="w-full brightness-50" /></div>
+        <div class="swiper-slide"><img src="assets/images/carousel_1.jpeg" alt="" class="w-full brightness-50" /></div>
+        <div class="swiper-slide"><img src="assets/images/carousel_2.jpeg" alt="" class="w-full brightness-50" /></div>
+        <div class="swiper-slide"><img src="assets/images/carousel_3.jpeg" alt="" class="w-full brightness-50" /></div>
       </div>
       <div class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
         <h1 class="w-full text-center text-neutral-50 text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5">EKSTRAKURIKULER</h1>
@@ -139,7 +139,7 @@ if (isset($_GET['t_id'])) {
     <footer class="bg-[#655740] flex items-center flex-col gap-10 md:gap-0 md:flex-row py-10 justify-between">
       <div class="flex items-center gap-5 md:gap-14 flex-col md:flex-row">
         <div class="flex gap-7 border-0 md:border md:border-r-2 md:border-y-0 md:border-l-0 md:border-r-white">
-          <img class="w-[100px]" src="../assets/images/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
+          <img class="w-[100px]" src="assets/images/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
           <div class="inline-block flex flex-col justify-end">
             <h1 class="w-56 text-white text-lg font-extrabold font-['Montserrat'] uppercase leading-[23px] tracking-widest">SMKN 1 PEKALONGAN</h1>
             <p class="w-[185px] h-[38px] opacity-50 text-white text-xs font-semibold font-['Source Sans 3'] capitalize tracking-[5px]">SMK Bisa - Hebat</p>
