@@ -104,6 +104,7 @@ if (isset($_GET['t_id'])) {
         <h1 class="w-full text-center text-neutral-50 text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5">PUSAT INFORMASI</h1>
         <form action="informasi.php" method="post" class="w-[63%] mx-auto relative">
           <input type="text" name="search-term" placeholder="Apa yang ingin anda cari?" class="w-full rounded-full p-5 box-border text-input" />
+          <input type="submit" name="search-term1" class="absolute right-3 top-1/2 -translate-y-1/2 px-4 py-3 rounded-full bg-[#DFB86B]">
         </form>
       </div>
     </section>
