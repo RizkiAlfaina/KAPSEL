@@ -253,6 +253,7 @@ if (isset($_GET['t_id'])) {
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/profil.js"></script>
     <script src="assets/js/swiper.js"></script>
   </body>
 </html>
