@@ -1,16 +1,18 @@
 header {
-	background: #01474a;
+	background: #504433;
 }
 
 .admin-wrapper {
 	display: flex;
 	height: calc(100% - 66px);
+	font-size: 22px;
 }
 
 .admin-wrapper .left-sidebar {
 	flex: 2;
 	height: 100%;
-	background: #234a57;
+	background: #655740;
+	
 }
 
 .admin-wrapper .left-sidebar ul {
@@ -23,11 +25,11 @@ header {
 .admin-wrapper .left-sidebar ul li a {
 	padding: 18px;
 	display: block;
-	border-bottom: 1px solid #004044;
+	border-bottom: 1px solid #655740;
 }
 
 .admin-wrapper .left-sidebar ul li a:hover {
-	background: #004044;
+	background: #504433;
 }
 
 .admin-wrapper .admin-content {
@@ -52,6 +54,7 @@ td {
 	padding: 15px;
 	text-align: left;
 	border-bottom: 1px solid #d3d3d3;
+	font-size: 22px;
 }
 
 .edit {
