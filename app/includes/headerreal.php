@@ -34,7 +34,7 @@
           <li><a href="" class="block">STRUKTUR ORGANISASI</a></li>
         </ul>
         <a href="<?php echo BASE_URL . '/informasi.php' ?>" class="text-white font-Montserrat text-xl">INFORMASI</a>
-        <a href="" class="text-white font-Montserrat text-xl">KEJURUAN</a>
+        <a href="<?php echo BASE_URL . '/kejuruan.php' ?>" class="text-white font-Montserrat text-xl">KEJURUAN</a>
         <a href="<?php echo BASE_URL . '/ekstrakurikuler.php' ?>" class="text-white font-Montserrat text-xl">EKSTRAKURIKULER</a>
         <a href="<?php echo BASE_URL . '/index.php#kontak' ?>" class="text-white font-Montserrat text-xl">KONTAK</a>
       </nav>

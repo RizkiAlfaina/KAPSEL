@@ -110,9 +110,6 @@ if (isset($_GET['t_id'])) {
         <i class="fa-solid fa-chevron-right inline-block"></i>
         <p class="inline-block">News</p>
       </section>
-      <section>
-        <h1 class="w-full text-center text-black text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5 md:mb-20">KEJURUAN</h1>
-      </section>
       <section class="flex flex-col gap-20 py-8">
           <div class="">
             <a href="" class="flex flex-row w-full max-w-5xl gap-8 md:gap-5 bg-[#C8AE7D] p-5 rounded-r-2xl shadow shadow-2xl aspect-video md:aspect-auto">
