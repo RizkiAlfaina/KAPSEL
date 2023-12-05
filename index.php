@@ -191,31 +191,53 @@ if (isset($_GET['t_id'])) {
       </section>
       <section id="visimisi" class="flex flex-col md:flex-row items-center md:justify-center gap-14 pt-32 pb-56 px-10">
         <div class="rounded-2xl bg-[#C8AE7D] pt-16 pb-28 px-6 basis-1/2">
-          <h2 class="text-black text-6xl font-extrabold font-Montserrat tracking-widest indent-4 mb-3">VISI</h2>
+          <h2 class="text-black text-6xl font-extrabold font-Montserrat tracking-widest indent-4 mb-3">MISI</h2>
           <ul class="flex flex-col gap-5 mb-8 text-xl font-normal">
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-square-check"></i>
-              <p class="align-middle ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+              <p class="align-middle ">Menanamkan keimanan dan ketaqwaan</p>
             </li>
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-square-check"></i>
-              <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+              <p class="align-middle">Menanamkan budi pekerti yang unggul</p>
             </li>
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-square-check"></i>
-              <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+              <p class="align-middle">Meningkatkan kompetensi dan profesionalisme guru dan karyawan</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Mengupayakan pemenuhan kebutuhan sarana dan prasarana</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Meningkatkan pelayanan pendidikan dan pembelajaran</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Meningkatkan kompetensi dan keterampilan siswa dalam mengembangkan diri agar mampu mandiri dan peka terhadap lingkungan</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Mengembangkan Inovasi teknologi tepat guna yang ramah lingkungan</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Menanamkan karakter kreatif, inovatif, produktif dan kompetitif</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Membangun kerjasama dengan DU/DI, lembaga Diklat, dan instansi terkait</p>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-square-check"></i>
+              <p class="align-middle">Menciptakan lingkungan sekolah yang sehat, kondusif, dan demokratis</p>
             </li>
           </ul>
-          <a href="" class="bg-[#655740] text-white rounded px-4 py-2 ml-4">Lihat Selengkapnya</a>
         </div>
         <div class="rounded-2xl bg-[#C8AE7D] pt-16 pb-28 px-10 basis-1/2">
-          <h2 class="text-black text-6xl font-extrabold font-Montserrat mb-3">MISI</h2>
-          <p class="mb-6 text-xl font-normal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in....
-          </p>
-          <a href="" class="bg-[#655740] text-white rounded px-4 py-2">Lihat Selengkapnya</a>
+          <h2 class="text-black text-6xl font-extrabold font-Montserrat mb-3">VISI</h2>
+          <p class="mb-6 text-xl font-normal">Menjadi Sekolah unggul yang menghasilkan tamatan berjiwa wirausaha, berwawasan teknologi dan lingkungan berdasarkan Iman dan taqwa</p>
         </div>
       </section>
       <h1 class="text-black text-[50px] font-extrabold font-Montserrat leading-none text-center mb-10">Kontak</h1>
