@@ -21,19 +21,19 @@
             <i class="fa fa-chevron-down"></i>
           </div>
           <ul class="transform xl:scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top top-1/2 xl:absolute xl:pt-3 hidden xl:block">
-            <li><a href="">a</a></li>
-            <li><a href="">b</a></li>
-            <li><a href="">c</a></li>
-            <li><a href="">d</a></li>
-            <li><a href="">e</a></li>
+            <li><a href="">KATA SAMBUTAN</a></li>
+            <li><a href="">VISI & MISI</a></li>
+            <li><a href="">SEJARAH</a></li>
+            <li><a href="">SARANA & PRASARANA</a></li>
+            <li><a href="">STRUKTUR ORGANISASI</a></li>
           </ul>
         </button>
         <ul class="text-white font-Montserrat text-xl text-start flex gap-5 flex-col hidden" id="profilmenus">
-          <li><a href="" class="block">a</a></li>
-          <li><a href="" class="block">b</a></li>
-          <li><a href="" class="block">c</a></li>
-          <li><a href="" class="block">d</a></li>
-          <li><a href="" class="block">e</a></li>
+          <li><a href="" class="block">KATA SAMBUTAN</a></li>
+          <li><a href="" class="block">VISI & MISI</a></li>
+          <li><a href="" class="block">SEJARAH</a></li>
+          <li><a href="" class="block">SARANA & PRASARANA</a></li>
+          <li><a href="" class="block">STRUKTUR ORGANISASI</a></li>
         </ul>
         <a href="<?php echo BASE_URL . '/informasi.php' ?>" class="text-white font-Montserrat text-xl">INFORMASI</a>
         <a href="" class="text-white font-Montserrat text-xl">KEJURUAN</a>
