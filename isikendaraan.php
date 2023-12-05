@@ -98,18 +98,31 @@ if (isset($_GET['t_id'])) {
         <p class="inline-block">News</p>
       </section>
       <section class="w-full max-w-6xl text-center mx-auto px-4">
-          <h1 class="text-4xl font-Montserrat font-extrabold mb-2">Either give me more wine or leave me alone</h1>
+          <h1 class="text-4xl font-Montserrat font-extrabold mb-2">Teknik Kendaraan Ringan</h1>
           <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i>Admin</span>
           <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i>05/12/2023</span>
           <div class="w-full aspect-video my-4">
             <img src="assets/images/image_7.png" alt="" class="w-full aspect-video object-center object-cover">
           </div>
-          <div class="text-justify text-xl font-normal">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lorem non sem vulputate, ac eleifend nulla vulputate. Maecenas velit sem, ullamcorper ac libero at, ultrices elementum erat. Maecenas sit amet nunc eros. Nunc accumsan pellentesque lectus id ultricies. Curabitur et erat malesuada, tristique metus et, laoreet lacus. Suspendisse iaculis eget nibh nec egestas. Sed fermentum urna et est suscipit dignissim eu non diam. In ac vestibulum ipsum. Mauris porttitor finibus dui, in tincidunt ligula congue vitae. Etiam hendrerit lorem semper urna ultrices, sed maximus arcu finibus.</p>
-            <p>Etiam vel iaculis velit. Pellentesque tempor turpis at urna dictum, id venenatis mauris lacinia. Curabitur ut tortor eget massa viverra dapibus. Praesent congue mauris porttitor tortor dictum, ac sollicitudin mauris lacinia. Aliquam dolor lorem, suscipit ut est eget, cursus imperdiet ex. Nunc vehicula, ex sed vulputate venenatis, est elit volutpat ante, sit amet tempus ante ex sed magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sagittis mollis rutrum. Quisque lobortis, elit vitae vulputate consectetur, nisi nisi varius sapien, vitae feugiat urna arcu eu ante. Fusce orci ipsum, tempus vitae fringilla ac, efficitur id erat. Integer diam diam, suscipit ut massa eget, rhoncus ornare lorem. Pellentesque ac venenatis enim. Vivamus tempor sagittis lacinia.</p>
-            <p>Nunc porta felis ligula, sed pretium felis mollis et. Sed sodales euismod velit, in euismod diam fermentum a. Quisque eu auctor nibh, ut semper enim. Vestibulum eget bibendum lorem, in vehicula ante. Curabitur vitae hendrerit diam. Sed ornare enim et nunc posuere, ut vulputate velit pretium. Etiam nec iaculis arcu, in fringilla risus. Nullam viverra libero sed urna varius, a pharetra ligula feugiat. Curabitur tempus interdum porttitor. Sed ac nunc sit amet leo interdum tincidunt. Maecenas aliquet, eros non sollicitudin cursus, magna metus posuere metus, vel pulvinar justo lacus at augue. Etiam egestas erat ac sodales tempor. Maecenas ex arcu, gravida vitae fermentum at, laoreet a risus.</p>
-            <p>Donec rhoncus sed diam sit amet posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras hendrerit odio in risus lacinia, ac dictum quam finibus. Praesent ornare tincidunt consectetur. Etiam consequat dolor sapien, quis gravida orci tempor quis. Sed interdum viverra lorem, eget rhoncus eros suscipit sed. Suspendisse at dapibus massa, non elementum enim. Vestibulum et congue est, ac ullamcorper mauris. Nunc id orci aliquet ante bibendum fermentum eu molestie nulla. Maecenas molestie tincidunt urna nec lobortis.</p>
-            <p>Aenean ut metus vitae nibh vulputate aliquam quis nec mauris. Donec tristique lobortis ante, vitae viverra urna pharetra eget. Nunc nec sem ultrices, convallis eros vitae, condimentum lacus. Nunc sed feugiat mi, ut tempus nibh. Vestibulum posuere ut magna nec bibendum. Aenean est mauris, suscipit sed interdum id, varius eu ex. Suspendisse potenti. Suspendisse vulputate augue vitae ante tincidunt tempus vulputate ut dui.</p>
+          <div class="text-justify text-xl font-normal space-y-4">
+            <p>Teknik Kendaraan Ringan adalah ilmu yang mempelajari tentang alat-alat transportasi darat yang menggunakan mesin, terutama mobil yang mulai berkembang sebagai cabang ilmu seiring dengan diciptakannya mesin mobil. Dalam perkembangannya, mobil semakin menjadi alat transportasi yang kompleks yang terdiri dari ribuan komponen yang tergolong dalam puluhan system dan subsistem. Oleh karena itu, Teknik Kendaraan Ringan pun berkembang menjadi ilmu yang luas dan mencakup semua system dan subsistem.</p>
+            <p>Teknik Kendaraan Ringan yang dulunya adalah Teknik Otomotif, membekali peserta didik dengan ilmu kendaraan ringan agar mampu melaksanakan perawatan dan perbaikan komponen – komponen mobil secara mandiri, merawat dan memperbaiki mobil sesuai dengan standar yang ditentukan oleh pabrik, merawat dan memperbaiki mobil pada bengkel atau perusahaan dimana tempat ia bekerja, serta menciptakan lapangan kerja baru bagi dirinya dan orang lain.</p>
+            <p>Tujuan Kompetensi keahlian Teknik Kendaraan Ringan SMK Negeri 1 Pekalongan yaitu membekali peserta didik dengan pengetahuan, sikap, prilaku dan ketrampilan agar kompeten dalam perawatan dan perbaikan motor otomotif, Perawatan dan perbaikan system pemindah tenaga otomotif, Perawatan dan perbaikan chasis dan suspense otomotif, Perawatan dan perbaikan system kelistrikan otomotif serta dibekali kemampuan dalam berwirausaha sesuai dengan perkembangan kebutuhan masyarakat dunia industry.</p>
+            <h2 class="font-Montserrat font-bold">Visi Program Keahlian</h2>
+            <p>Menjadi Sekolah unggul yang menghasilkan tamatan berjiwa wirausaha, berwawasan teknologi dan lingkungan berdasarkan Imtaq</p>
+            <h2 class="font-Montserrat font-bold">Misi Program Keahlian</h2>
+            <ol class="list-decimal list-inside">
+              <li>Menanamkan keimanan dan ketaqwaan</li>
+              <li>Menanamkan budi pekerti yang unggul</li>
+              <li>Meningkatkan kompetensi dan profesionalisme guru dan karyawan.</li>
+              <li>Mengupayakan pemenuhan kebutuhan sarana dan prasarana</li>
+              <li>Meningkatkan pelayanan pendidikan dan pembelajaran</li>
+              <li>Meningkatkan kompetensi dan keterampilan siswa dalam mengembangkan diri agar mampu mandiri dan peka terhadap lingkungan</li>
+              <li>Mengembangkan Inovasi teknologi tepat guna yang ramah lingkungan.</li>
+              <li>Menanamkan karakter kreatif, inovatif, produktif dan kompetitif.</li>
+              <li>Membangun kerjasama dengan DU/DI, lembaga Diklat, dan instansi terkait</li>
+              <li>Menciptakan lingkungan sekolah yang sehat, kondusif, dan demokratisi</li>
+            </ol>
           </div>
       </section>
     </main>

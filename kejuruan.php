@@ -115,7 +115,7 @@ if (isset($_GET['t_id'])) {
             <a href="isikendaraan.php" class="flex flex-row w-full max-w-5xl gap-8 md:gap-5 bg-[#C8AE7D] p-5 rounded-r-2xl shadow shadow-2xl aspect-video md:aspect-auto">
                 <div class="text-center w-1/2 overflow-scroll md:overflow-auto">
                     <h2 class="text-black text-2xl md:text-4xl font-extrabold font-Neuton uppercase tracking-widest mb-4">Teknik Kendaraan Ringan</h2>
-                    <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Teknik Kendaraan Ringan adalah ilmu yang mempelajari tentang alat-alat transportasi darat yang menggunakan mesin, terutama mobil yang mulai berkembang sebagai cabang ilmu seiring dengan diciptakannya mesin mobil. Dalam perkemban...</p>
                 </div>
                 <div class="w-1/2 rounded-2xl overflow-hidden">
                     <img src="assets/images/image_6.png" alt="" class="w-full h-full object-cover object-center">
@@ -126,7 +126,7 @@ if (isset($_GET['t_id'])) {
             <a href="isipeternakan.php" class="flex flex-row w-full max-w-5xl gap-8 md:gap-5 bg-[#C8AE7D] p-5 rounded-l-2xl shadow shadow-2xl aspect-video md:aspect-auto">
                 <div class="text-center w-1/2 overflow-scroll md:overflow-auto">
                     <h2 class="text-black text-2xl md:text-4xl font-extrabold font-Neuton uppercase tracking-widest mb-4">Agribisnis Ternak Ruminansia</h2>
-                    <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Pesatnya perkembangan jumlah penduduk disertai meningkatnya kesadaran masyarakat terhadap gizi dan produk yang sehat mengakibatkan permintaan protein hewani termasuk produk asal ruminansia (daging, susu dan kulit) meningkat. Jum...</p>
                 </div>
                 <div class="w-1/2 rounded-2xl overflow-hidden">
                     <img src="assets/images/image_6.png" alt="" class="w-full h-full object-cover object-center">
@@ -137,7 +137,7 @@ if (isset($_GET['t_id'])) {
             <a href="isiakuntansi.php" class="flex flex-row w-full max-w-5xl gap-8 md:gap-5 bg-[#C8AE7D] p-5 rounded-r-2xl shadow shadow-2xl aspect-video md:aspect-auto">
                 <div class="text-center w-1/2 overflow-scroll md:overflow-auto">
                     <h2 class="text-black text-2xl md:text-4xl font-extrabold font-Neuton uppercase tracking-widest mb-4">Akuntansi</h2>
-                    <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Yang dimaksudkan dengan Keahlian Akuntansi dalam hal ini terbatas pada cakupan keahlian sebagai Teknisi Akuntansi (Pembantu Akuntan) sesuai dengan rumusan Standar Kompetensi Kerja Nasional Indonesia (SKKNI) untuk bidang Teknisi ...</p>
                 </div>
                 <div class="w-1/2 rounded-2xl overflow-hidden">
                     <img src="assets/images/image_6.png" alt="" class="w-full h-full object-cover object-center">
