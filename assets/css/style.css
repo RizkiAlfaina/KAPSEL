@@ -8,7 +8,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: #f6f6f6;
-  font-family: "Lora", serif;
+  font-family: "Source+Sans+3", "sans-serif";
 }
 
 h1,
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Candal", serif;
+  font-family: "Montserrat", "sans-serif";
   color: #5c5b5b;
   margin: 5px;
 }
@@ -35,12 +35,12 @@ a {
 
 .btn {
   padding: 0.5rem 1rem;
-  background: #006669;
+  background: #655740;
   color: white;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   font-size: 1.08em;
-  font-family: "Lora", serif;
+  font-family: "Source+Sans+3", "sans-serif";
 }
 
 .btn-big {
@@ -50,7 +50,7 @@ a {
 
 .btn:hover {
   color: white !important;
-  background: #005255;
+  background: #504433;
 }
 
 .text-input {
@@ -63,7 +63,7 @@ a {
   color: #444;
   line-height: 1.5rem;
   font-size: 1.2em;
-  font-family: "Lora", serif;
+  font-family: "Source+Sans+3", "sans-serif";
 }
 
 .msg {
@@ -105,7 +105,8 @@ header .logo {
 
 header .logo-text {
   margin: 9px;
-  font-family: "Candal", serif;
+  font-size: 40px;
+  font-family: "Montserrat", "sans-serif";
 }
 
 header .logo-text span {
@@ -480,7 +481,7 @@ header .menu-toggle {
 .footer .footer-content .contact-form .contact-btn {
   float: right;
   font-size: 1.1em;
-  font-family: "Lora", serif;
+  font-family: "Source+Sans+3", "sans-serif";
 }
 
 .footer .footer-bottom {
