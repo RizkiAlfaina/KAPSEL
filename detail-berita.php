@@ -97,30 +97,60 @@ if (isset($_GET['t_id'])) {
         <i class="fa-solid fa-chevron-right inline-block"></i>
         <p class="inline-block">News</p>
       </section>
-      <section>
-        <h1 class="w-full text-center text-black text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5 md:mb-20">EKSTRAKURIKULER</h1>
-      </section>
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-11">
-          <a href="" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">OSIS</h3>
-          </a>
-          <a href="" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">OSIS</h3>
-          </a>
-          <a href="" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">OSIS</h3>
-          </a>
-          <a href="" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">OSIS</h3>
-          </a>
-          <a href="" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">OSIS</h3>
-          </a>
+      <section class="flex flex-col md:flex-row gap-4">
+        <!-- news detail -->
+        <section class="w-full md:w-4/6">
+          <h1 class="text-4xl font-Montserrat font-extrabold mb-2">Either give me more wine or leave me alone</h1>
+          <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i>Admin</span>
+          <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i>05/12/2023</span>
+          <div class="w-full aspect-video my-4">
+            <img src="assets/images/image_7.png" alt="" class="w-full aspect-video object-center object-cover">
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lorem non sem vulputate, ac eleifend nulla vulputate. Maecenas velit sem, ullamcorper ac libero at, ultrices elementum erat. Maecenas sit amet nunc eros. Nunc accumsan pellentesque lectus id ultricies. Curabitur et erat malesuada, tristique metus et, laoreet lacus. Suspendisse iaculis eget nibh nec egestas. Sed fermentum urna et est suscipit dignissim eu non diam. In ac vestibulum ipsum. Mauris porttitor finibus dui, in tincidunt ligula congue vitae. Etiam hendrerit lorem semper urna ultrices, sed maximus arcu finibus.</p>
+            <p>Etiam vel iaculis velit. Pellentesque tempor turpis at urna dictum, id venenatis mauris lacinia. Curabitur ut tortor eget massa viverra dapibus. Praesent congue mauris porttitor tortor dictum, ac sollicitudin mauris lacinia. Aliquam dolor lorem, suscipit ut est eget, cursus imperdiet ex. Nunc vehicula, ex sed vulputate venenatis, est elit volutpat ante, sit amet tempus ante ex sed magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum sagittis mollis rutrum. Quisque lobortis, elit vitae vulputate consectetur, nisi nisi varius sapien, vitae feugiat urna arcu eu ante. Fusce orci ipsum, tempus vitae fringilla ac, efficitur id erat. Integer diam diam, suscipit ut massa eget, rhoncus ornare lorem. Pellentesque ac venenatis enim. Vivamus tempor sagittis lacinia.</p>
+            <p>Nunc porta felis ligula, sed pretium felis mollis et. Sed sodales euismod velit, in euismod diam fermentum a. Quisque eu auctor nibh, ut semper enim. Vestibulum eget bibendum lorem, in vehicula ante. Curabitur vitae hendrerit diam. Sed ornare enim et nunc posuere, ut vulputate velit pretium. Etiam nec iaculis arcu, in fringilla risus. Nullam viverra libero sed urna varius, a pharetra ligula feugiat. Curabitur tempus interdum porttitor. Sed ac nunc sit amet leo interdum tincidunt. Maecenas aliquet, eros non sollicitudin cursus, magna metus posuere metus, vel pulvinar justo lacus at augue. Etiam egestas erat ac sodales tempor. Maecenas ex arcu, gravida vitae fermentum at, laoreet a risus.</p>
+            <p>Donec rhoncus sed diam sit amet posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras hendrerit odio in risus lacinia, ac dictum quam finibus. Praesent ornare tincidunt consectetur. Etiam consequat dolor sapien, quis gravida orci tempor quis. Sed interdum viverra lorem, eget rhoncus eros suscipit sed. Suspendisse at dapibus massa, non elementum enim. Vestibulum et congue est, ac ullamcorper mauris. Nunc id orci aliquet ante bibendum fermentum eu molestie nulla. Maecenas molestie tincidunt urna nec lobortis.</p>
+            <p>Aenean ut metus vitae nibh vulputate aliquam quis nec mauris. Donec tristique lobortis ante, vitae viverra urna pharetra eget. Nunc nec sem ultrices, convallis eros vitae, condimentum lacus. Nunc sed feugiat mi, ut tempus nibh. Vestibulum posuere ut magna nec bibendum. Aenean est mauris, suscipit sed interdum id, varius eu ex. Suspendisse potenti. Suspendisse vulputate augue vitae ante tincidunt tempus vulputate ut dui.</p>
+          </div>
+        </section>
+        <!-- filter -->
+        <section class="w-full md:w-2/6">
+          <div class="flex flex-col rounded-lg shadow-md border border-2 p-2 mb-4">
+            <h2 class="text-lg font-Montserrat font-bold border border-t-0 border-x-0 border-b-black w-full mb-3">Popular</h2>
+            <!-- List Berita -->
+            <div class="flex flex-col gap-3">
+              <!-- Berita Satuan -->
+              <div class="flex flex-row gap-2 border border-t-0 border-x-0 border-gray-300 pb-3">
+                <div class="aspect-square md:aspect-video w-1/4 rounded-md overflow-hidden">
+                  <img src="assets/images/school_ground.png" alt="" class="w-full object-cover object-center">
+                </div>
+                <h2 class="text-md md:text-lg font-Montserrat font-bold">Either give me more wine or leave me alone</h2>
+              </div>
+              <div class="flex flex-row gap-2 border border-t-0 border-x-0 border-gray-300 pb-3">
+                <div class="aspect-square md:aspect-video w-1/4 rounded-md overflow-hidden">
+                  <img src="assets/images/school_ground.png" alt="" class="w-full object-cover object-center">
+                </div>
+                <h2 class="text-md md:text-lg font-Montserrat font-bold">Either give me more wine or leave me alone</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col rounded-lg shadow-md border border-2 p-2">
+            <h2 class="text-lg font-Montserrat font-bold border border-t-0 border-x-0 border-b-black w-full mb-3">Topics</h2>
+            <div class="flex flex-col gap-2">
+              <!-- Category Satuan -->
+              <div class="flex flex-row gap-2 border border-t-0 border-x-0 border-gray-300 pb-2 w-full">
+                <a href="" class="block w-full">Life</a>
+              </div>
+              <div class="flex flex-row gap-2 border border-t-0 border-x-0 border-gray-300 pb-2">
+                <a href="" class="block w-full">Life</a>
+              </div>
+              <div class="flex flex-row gap-2 border border-t-0 border-x-0 border-gray-300 pb-2">
+                <a href="" class="block w-full">Life</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="bg-[#655740] flex items-center flex-col gap-10 md:gap-0 md:flex-row py-10 justify-between">
