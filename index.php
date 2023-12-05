@@ -180,9 +180,11 @@ if (isset($_GET['t_id'])) {
         <div id="sejarah" class="basis-1/2 text-center px-10 flex flex-col justify-center gap-9">
           <h2 class="text-black text-4xl md:text-6xl font-extrabold font-Montserrat uppercase tracking-widest w-full">SEJARAH</h2>
           <p class="text-justify text-black text-xl font-normal font-SourceSans tracking-widest">
-            Jadi dulu sekolah ini dulu bekas rumah sakit dan bla bla blaa... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            SMKN 1 Pekalongan Lampung Timur merupakan sekolah kejuruan negeri yang berada 
+            di kabupaten Lampung Timur. Didirikan secara resmi tanggal 23 Mei 2013 sesuai 
+            dengan SK Pendirian yang dikeluarkan oleh Pemerintah Kabupaten Lampung Timur 
+            nomor 425/480/SK/2013. SMKN 1 Pekalongan berada di Jalan Bengkok No. 29 Desa 
+            Sidodadi Kecamatan Pekalongan Kabupaten Lampung Timur.
           </p>
         </div>
         <div class="basis-1/2">
