@@ -1,6 +1,6 @@
 <header class="xl:absolute xl:z-50 w-full bg-[#655740] xl:bg-transparent flex flex-col box-border xl:flex-row xl:justify-between xl:items-center xl:px-[69px]">
       <div class="flex justify-between px-3 py-6 items-center" id="top-bar">
-        <a href="" class="inline-block flex items-center gap-3">
+        <a href="<?php echo BASE_URL . '/index.php' ?>" class="inline-block flex items-center gap-3">
           <img class="w-[75px] xl:w-[100px] inline-block" src="assets/images/logo_sekolah.png" alt="" />
           <div class="inline-block">
             <h1 class="w-56 text-white text-lg font-extrabold font-Montserrat w-fit tracking-widest">SMKN 1</h1>
@@ -21,11 +21,9 @@
             <i class="fa fa-chevron-down"></i>
           </div>
           <ul class="transform xl:scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top top-1/2 xl:absolute xl:pt-3 hidden xl:block">
-            <li><a href="">KATA SAMBUTAN</a></li>
-            <li><a href="">VISI & MISI</a></li>
-            <li><a href="">SEJARAH</a></li>
-            <li><a href="">SARANA & PRASARANA</a></li>
-            <li><a href="">STRUKTUR ORGANISASI</a></li>
+            <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#sambutan' ?>">SAMBUTAN</a></li>
+            <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#sejarah' ?>">SEJARAH</a></li>
+            <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#visimisi' ?>">VISI & MISI</a></li>
           </ul>
         </button>
         <ul class="text-white font-Montserrat text-xl text-start flex gap-5 flex-col hidden" id="profilmenus">
@@ -38,7 +36,7 @@
         <a href="<?php echo BASE_URL . '/informasi.php' ?>" class="text-white font-Montserrat text-xl">INFORMASI</a>
         <a href="" class="text-white font-Montserrat text-xl">KEJURUAN</a>
         <a href="<?php echo BASE_URL . '/ekstrakurikuler.php' ?>" class="text-white font-Montserrat text-xl">EKSTRAKURIKULER</a>
-        <a href="#kontak" class="text-white font-Montserrat text-xl">KONTAK</a>
+        <a href="<?php echo BASE_URL . '/index.php#kontak' ?>" class="text-white font-Montserrat text-xl">KONTAK</a>
       </nav>
       <?php if (isset($_SESSION['id'])): ?>
           <div class="text-white font-Montserrat text-xl px-4 font-bold mb-5 xl:mb-0 relative group hidden xl:block" id="login">
@@ -55,6 +53,6 @@
             </ul>        
           </div>
       <?php else: ?>
-        <a href="<?php echo BASE_URL . '/login.php' ?>" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0" id="login">Login</a>
+        <a href="<?php echo BASE_URL . '/login1.php' ?>" class="text-white font-Montserrat text-xl px-4 font-bold mb-5 hidden xl:block xl:mb-0" id="login">Login</a>
       <?php endif; ?>
     </header>

@@ -148,17 +148,17 @@ if (isset($_GET['t_id'])) {
             <div class="mb-4">
               <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="w-full" />
               <div>
-                <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
+                <h2 class="text-black text-[32px] font-bold font-Montserrat tracking-widest"><a href="detail-berita.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
                 <div class="flex flex-wrap gap-2">
                   <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i><?php echo $post['username']; ?></span>
                   <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i><?php echo date('F j, Y', strtotime($post['created_at'])); ?></span>
                 </div>
               </div>
               <div>
-                <p class="text-black font-normal font-SourceSans tracking-wide mb-2">
+                <p class="text-black text-xl font-normal font-SourceSans tracking-wide mb-2">
                   <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
                 </p>
-                <a href="single.php?id=<?php echo $post['id']; ?>" class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg">Lihat Selengkapnya</a>
+                <a href="detail-berita.php?id=<?php echo $post['id']; ?>" class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg">Lihat Selengkapnya</a>
               </div>
             </div>
           <?php endforeach; ?>

@@ -27,7 +27,7 @@ function loginUser($user)
     $_SESSION['type'] = 'success';
 
     if ($_SESSION['admin']) {
-        header('location: ' . BASE_URL . '/admin/dashboard.php'); 
+        header('location: ' . BASE_URL . '/index.php'); 
     } else {
         header('location: ' . BASE_URL . '/index.php');
     }

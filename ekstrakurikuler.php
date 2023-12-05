@@ -110,9 +110,6 @@ if (isset($_GET['t_id'])) {
         <i class="fa-solid fa-chevron-right inline-block"></i>
         <p class="inline-block">News</p>
       </section>
-      <section>
-        <h1 class="w-full text-center text-black text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5 md:mb-20">EKSTRAKURIKULER</h1>
-      </section>
       <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-11">
           <a href="" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
             <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>

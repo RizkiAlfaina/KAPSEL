@@ -104,11 +104,11 @@ if (isset($_GET['t_id'])) {
     </section>
     <main>
       <section class="flex flex-col gap-5 w-full px-10 py-10 md:flex-row md:justify-around">
-        <img src="assets/images/foto_kepsek.png" alt="" class="w-full md:w-1/3" />
+        <img src="assets/images/foto_kepsek.png" alt="" id="sambutan" class="w-full md:w-1/3" />
         <div class="w-full md:w-1/2 flex flex-col justify-center gap-3">
           <h1 class="text-black text-[50px] font-extrabold font-Montserrat leading-none">JUDUL SAMBUTAN</h1>
           <h2 class="text-black text-[27px] font-semibold font-SourceSans">Drs. Suyanto S.pd., M.pd.</h2>
-          <p class="max-w-2xl break-all">
+          <p class="max-w-2xl break-all text-xl font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null....
           </p>
@@ -177,7 +177,7 @@ if (isset($_GET['t_id'])) {
         <div class="swiper-button-prev text-gray-600 font-extrabold"></div>
       </section> -->
       <section class="flex flex-col-reverse md:flex-row gap-9 md:gap-0">
-        <div class="basis-1/2 text-center px-10 flex flex-col justify-center gap-9">
+        <div id="sejarah" class="basis-1/2 text-center px-10 flex flex-col justify-center gap-9">
           <h2 class="text-black text-4xl md:text-6xl font-extrabold font-Montserrat uppercase tracking-widest w-full">SEJARAH</h2>
           <p class="text-justify text-black text-xl font-normal font-SourceSans tracking-widest">
             Jadi dulu sekolah ini dulu bekas rumah sakit dan bla bla blaa... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -189,13 +189,13 @@ if (isset($_GET['t_id'])) {
           <img class="w-full" src="assets/images/school_ground.png" alt="" />
         </div>
       </section>
-      <section class="flex flex-col md:flex-row items-center md:justify-center gap-14 pt-32 pb-56 px-10">
+      <section id="visimisi" class="flex flex-col md:flex-row items-center md:justify-center gap-14 pt-32 pb-56 px-10">
         <div class="rounded-2xl bg-[#C8AE7D] pt-16 pb-28 px-6 basis-1/2">
           <h2 class="text-black text-6xl font-extrabold font-Montserrat tracking-widest indent-4 mb-3">VISI</h2>
-          <ul class="flex flex-col gap-5 mb-8">
+          <ul class="flex flex-col gap-5 mb-8 text-xl font-normal">
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-square-check"></i>
-              <p class="align-middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+              <p class="align-middle ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             </li>
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-square-check"></i>
@@ -210,7 +210,7 @@ if (isset($_GET['t_id'])) {
         </div>
         <div class="rounded-2xl bg-[#C8AE7D] pt-16 pb-28 px-10 basis-1/2">
           <h2 class="text-black text-6xl font-extrabold font-Montserrat mb-3">MISI</h2>
-          <p class="mb-6">
+          <p class="mb-6 text-xl font-normal">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in....

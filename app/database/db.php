@@ -72,6 +72,37 @@ function selectOne($table, $conditions)
     return $records;
 }
 
+function selectPopular($table, $conditions = [])
+{
+    global $conn;
+    $sql = "SELECT * FROM $table";
+
+    if (empty($conditions)) {
+        $sql .= " ORDER BY RAND() LIMIT 5";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        return $records;
+    } else {
+        $i = 0;
+        foreach ($conditions as $key => $value) {
+            if ($i === 0) {
+                $sql .= " WHERE $key=?";
+            } else {
+                $sql .= " AND $key=?";
+            }
+            $i++;
+        }
+
+        $sql .= " ORDER BY RAND() LIMIT 5";
+
+        $stmt = executeQuery($sql, $conditions);
+        $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        return $records;
+    }
+}
+
+
 
 function create($table, $data)
 {
