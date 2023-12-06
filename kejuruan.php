@@ -118,7 +118,7 @@ if (isset($_GET['t_id'])) {
                     <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Teknik Kendaraan Ringan adalah ilmu yang mempelajari tentang alat-alat transportasi darat yang menggunakan mesin, terutama mobil yang mulai berkembang sebagai cabang ilmu seiring dengan diciptakannya mesin mobil. Dalam perkemban...</p>
                 </div>
                 <div class="w-1/2 rounded-2xl overflow-hidden">
-                    <img src="assets/images/image_6.png" alt="" class="w-full h-full object-cover object-center">
+                    <img src="assets/images/otomotif.jpg" alt="" class="w-full h-full object-cover object-center">
                 </div>
             </a>
           </div>
@@ -129,7 +129,7 @@ if (isset($_GET['t_id'])) {
                     <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Pesatnya perkembangan jumlah penduduk disertai meningkatnya kesadaran masyarakat terhadap gizi dan produk yang sehat mengakibatkan permintaan protein hewani termasuk produk asal ruminansia (daging, susu dan kulit) meningkat. Jum...</p>
                 </div>
                 <div class="w-1/2 rounded-2xl overflow-hidden">
-                    <img src="assets/images/image_6.png" alt="" class="w-full h-full object-cover object-center">
+                    <img src="assets/images/agribisnis.jpg" alt="" class="w-full h-full object-cover object-center">
                 </div>
             </a>
           </div>
@@ -140,7 +140,7 @@ if (isset($_GET['t_id'])) {
                     <p class="text-left text-black text-base md:text-2xl font-normal font-SourceSans tracking-widest">Yang dimaksudkan dengan Keahlian Akuntansi dalam hal ini terbatas pada cakupan keahlian sebagai Teknisi Akuntansi (Pembantu Akuntan) sesuai dengan rumusan Standar Kompetensi Kerja Nasional Indonesia (SKKNI) untuk bidang Teknisi ...</p>
                 </div>
                 <div class="w-1/2 rounded-2xl overflow-hidden">
-                    <img src="assets/images/image_6.png" alt="" class="w-full h-full object-cover object-center">
+                    <img src="assets/images/akutansi.jpg" alt="" class="w-full h-full object-cover object-center">
                 </div>
             </a>
           </div>

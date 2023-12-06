@@ -21,17 +21,15 @@
             <i class="fa fa-chevron-down"></i>
           </div>
           <ul class="transform xl:scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top top-1/2 xl:absolute xl:pt-3 hidden xl:block">
-            <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#sambutan' ?>">SAMBUTAN</a></li>
+            <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#sambutan' ?>">KATA SAMBUTAN</a></li>
             <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#sejarah' ?>">SEJARAH</a></li>
             <li class="hover:bg-[#504433] w-full p-2.5"><a href="<?php echo BASE_URL . '/index.php#visimisi' ?>">VISI & MISI</a></li>
           </ul>
         </button>
         <ul class="text-white font-Montserrat text-xl text-start flex gap-5 flex-col hidden" id="profilmenus">
-          <li><a href="" class="block">KATA SAMBUTAN</a></li>
-          <li><a href="" class="block">VISI & MISI</a></li>
-          <li><a href="" class="block">SEJARAH</a></li>
-          <li><a href="" class="block">SARANA & PRASARANA</a></li>
-          <li><a href="" class="block">STRUKTUR ORGANISASI</a></li>
+          <li><a href="<?php echo BASE_URL . '/index.php#sambutan' ?>" class="block">KATA SAMBUTAN</a></li>
+          <li><a href="<?php echo BASE_URL . '/index.php#sejarah' ?>" class="block">SEJARAH</a></li>
+          <li><a href="<?php echo BASE_URL . '/index.php#visimisi' ?>" class="block">VISI & MISI</a></li>
         </ul>
         <a href="<?php echo BASE_URL . '/informasi.php' ?>" class="text-white font-Montserrat text-xl">INFORMASI</a>
         <a href="<?php echo BASE_URL . '/kejuruan.php' ?>" class="text-white font-Montserrat text-xl">KEJURUAN</a>
