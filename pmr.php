@@ -89,20 +89,7 @@ if (isset($_GET['t_id'])) {
     </style>
   </head>
   <body>
-    <?php include(ROOT_PATH . "/app/includes/headerreal.php"); ?>
-    <!-- Slider main container -->
-    <section class="hero-swiper relative">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="assets/images/carousel_1.jpeg" alt="" class="w-full brightness-50" /></div>
-        <div class="swiper-slide"><img src="assets/images/carousel_2.jpeg" alt="" class="w-full brightness-50" /></div>
-        <div class="swiper-slide"><img src="assets/images/carousel_3.jpeg" alt="" class="w-full brightness-50" /></div>
-      </div>
-      <div class="absolute z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
-        <h1 class="w-full text-center text-neutral-50 text-lg md:text-4xl xl:text-6xl font-extrabold font-Montserrat tracking-widest mb-5">EKSTRAKURIKULER</h1>
-      </div>
-    </section>
+    <?php include(ROOT_PATH . "/app/includes/headerreal-2.php"); ?>
     <main class="px-3 md:px-10 mb-10">
       <section class="my-5">
         <i class="fa-solid fa-house inline-block"></i>
@@ -110,45 +97,38 @@ if (isset($_GET['t_id'])) {
         <i class="fa-solid fa-chevron-right inline-block"></i>
         <p class="inline-block">News</p>
       </section>
-      <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-11">
-          <a href="pramuka.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Pramuka</h3>
-          </a>
-          <a href="paskibra.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Paskibra</h3>
-          </a>
-          <a href="pmr.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">PMR</h3>
-          </a>
-          <a href="seni.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Seni</h3>
-          </a>
-          <a href="sepakbola.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Sepak Bola</h3>
-          </a>
-          <a href="voli.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Voli</h3>
-          </a>
-          <a href="pencaksilat.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Pencak Silat</h3>
-          </a>
-          <a href="rohis.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
-            <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Rohani Islam</h3>
-          </a>
+      <section class="w-full max-w-6xl text-center mx-auto px-4">
+          <h1 class="text-4xl font-Montserrat font-extrabold mb-2">PALANG MERAH REMAJA SMKN 1 PEKALONGAN</h1>
+          <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-user mr-2"></i>Admin</span>
+          <span class="bg-[#D9D9D9] font-Montserrat px-2 py-1 rounded-lg"><i class="fa-regular fa-calendar mr-2"></i>05/12/2023</span>
+          <div class="w-full aspect-video my-4">
+            <img src="assets/images/image_7.png" alt="" class="w-full aspect-video object-center object-cover">
+          </div>
+          <div class="text-justify text-xl font-normal space-y-4">
+            <p>Yang dimaksudkan dengan Keahlian Akuntansi dalam hal ini terbatas pada cakupan keahlian sebagai Teknisi Akuntansi (Pembantu Akuntan) sesuai dengan rumusan Standar Kompetensi Kerja Nasional Indonesia (SKKNI) untuk bidang Teknisi Akuntansi. Bidang Teknisi Akuntansi meliputi dua jenjang yaitu Teknisi Akuntansi Pelaksana dan Teknisi Akuntansi Penyelia.</p>
+            <p>Kompetensi keahlian Akuntansi yang dijabarkan dalam panduan ini mengacu pada kompetensi keahlian untuk jenjang Teknisi Akuntansi Pelaksana, yaitu dapat bekerja sesuai dengan prosedur dan dibawah bimbingan/pengawasan. Ditambah beberapa kompetensi penunjang yang relevan, setingkat dengan kemampuan Teknisi Akuntansi Penyelia yaitu dapat bekerja sesuai prosedur secara mandiri, serta bekerja dalam tim.</p>
+            <h2 class="font-Montserrat font-bold">Visi Program Keahlian</h2>
+            <p>Menjadi Sekolah unggul yang menghasilkan tamatan berjiwa wirausaha, berwawasan teknologi dan lingkungan berdasarkan Imtaq</p>
+            <h2 class="font-Montserrat font-bold">Misi Program Keahlian</h2>
+            <ol class="list-decimal list-inside">
+              <li>Menanamkan keimanan dan ketaqwaan</li>
+              <li>Menanamkan budi pekerti yang unggul</li>
+              <li>Meningkatkan kompetensi dan profesionalisme guru dan karyawan.</li>
+              <li>Mengupayakan pemenuhan kebutuhan sarana dan prasarana</li>
+              <li>Meningkatkan pelayanan pendidikan dan pembelajaran</li>
+              <li>Meningkatkan kompetensi dan keterampilan siswa dalam mengembangkan diri agar mampu mandiri dan peka terhadap lingkungan</li>
+              <li>Mengembangkan Inovasi teknologi tepat guna yang ramah lingkungan.</li>
+              <li>Menanamkan karakter kreatif, inovatif, produktif dan kompetitif.</li>
+              <li>Membangun kerjasama dengan DU/DI, lembaga Diklat, dan instansi terkait</li>
+              <li>Menciptakan lingkungan sekolah yang sehat, kondusif, dan demokratisi</li>
+            </ol>
+          </div>
       </section>
     </main>
     <footer class="bg-[#655740] flex items-center flex-col gap-10 md:gap-0 md:flex-row py-10 justify-between">
       <div class="flex items-center gap-5 md:gap-14 flex-col md:flex-row">
         <div class="flex gap-7 border-0 md:border md:border-r-2 md:border-y-0 md:border-l-0 md:border-r-white">
-          <img class="w-[100px]" src="assets/images/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
+          <img class="w-[100px]" src="../assets/images/logo_sekolah.png" alt="Logo_SMKN1_Pekalongan" />
           <div class="inline-block flex flex-col justify-end">
             <h1 class="w-56 text-white text-lg font-extrabold font-['Montserrat'] uppercase leading-[23px] tracking-widest">SMKN 1 PEKALONGAN</h1>
             <p class="w-[185px] h-[38px] opacity-50 text-white text-xs font-semibold font-['Source Sans 3'] capitalize tracking-[5px]">SMK Bisa - Hebat</p>
@@ -180,6 +160,7 @@ if (isset($_GET['t_id'])) {
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/hamburger.js"></script>
+    <script src="assets/js/profil.js"></script>
     <script src="assets/js/swiper.js"></script>
   </body>
 </html>
