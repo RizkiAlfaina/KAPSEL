@@ -256,18 +256,14 @@ if (isset($_GET['t_id'])) {
             <i class="fa-solid fa-map-pin inline-block"></i>
             <p class="inline-block whitespace-normal">Jl. Bengkok No.29, Sidodadi, Kec. Pekalongan, Kabupaten Lampung Timur, Lampung 34381</p>
           </div>
-          <div>
-            <i class="fa-brands fa-whatsapp"></i>
-            <p></p>
-          </div>
-          <div>
-            <i class="fa-brands fa-facebook"></i>
-            <p></p>
-          </div>
-          <div>
+          <a href="https://www.instagram.com/smkn1pekalonganlamtim/?utm_source=ig_web_button_share_sheet&igshid=YzAwZjE1ZTI0Zg==">
             <i class="fa-brands fa-instagram"></i>
-            <p></p>
-          </div>
+            <span>Instagram</span>
+          </a>
+          <a href="https://web.facebook.com/groups/568690793175299/">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </a>
         </div>
       </section>
     </main>
