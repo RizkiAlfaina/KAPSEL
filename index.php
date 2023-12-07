@@ -108,9 +108,7 @@ if (isset($_GET['t_id'])) {
         <div class="w-full md:w-1/2 flex flex-col justify-center gap-3">
           <h1 class="text-black text-[50px] font-extrabold font-Montserrat leading-none">JUDUL SAMBUTAN</h1>
           <h2 class="text-black text-[27px] font-semibold font-SourceSans">Drs. Suyanto S.pd., M.pd.</h2>
-          <p class="max-w-2xl break-all text-xl font-normal">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat null....
+          <p class="max-w-2xl break-all text-xl font-normal text-justify">Assalamualaikum wr. wb., Saudara/i Guru dan Karyawan SMKN 1 Pekalongan, serta seluruh siswa-siswi yang tercinta.Pertama-tama, marilah kita panjatkan puji syukur kehadirat Tuhan Yang Maha Esa, karena atas berkat-Nya kita dapat berkumpul di kesempatan yang penuh keberkahan ini. Saya, Drs. Suyanto S.pd., M.pd., sebagai Kepala Sekolah SMKN 1 Pekalongan, merasa bangga dan bersyukur atas semangat dan dedikasi yang terus tumbuh dan berkembang di tengah-tengah kita. SMKN 1 Pekalongan bukan hanya sebuah sekolah ......
           </p>
           <a href="" class="bg-[#655740] rounded-md w-fit px-4 py-3 text-white font-SourceSans text-sm">Lihat Selengkapnya</a>
         </div>

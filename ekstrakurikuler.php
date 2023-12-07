@@ -112,11 +112,11 @@ if (isset($_GET['t_id'])) {
       </section>
       <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-11">
           <a href="pramuka.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/pramuka.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Pramuka</h3>
           </a>
           <a href="paskibra.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/paskibra_2.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Paskibra</h3>
           </a>
           <a href="pmr.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
@@ -124,23 +124,23 @@ if (isset($_GET['t_id'])) {
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">PMR</h3>
           </a>
           <a href="seni.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/seni.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Seni</h3>
           </a>
           <a href="sepakbola.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/sepakbola.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Sepak Bola</h3>
           </a>
           <a href="voli.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/voli.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Voli</h3>
           </a>
           <a href="pencaksilat.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/pencaksilat.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Pencak Silat</h3>
           </a>
           <a href="rohis.php" class="relative rounded-[20px] overflow-hidden aspect-video hover:shadow-2xl w-full">
-            <img src="assets/images/image_2.png" alt="" class="w-full object-cover object-center"/>
+            <img src="assets/images/rohis.jpg" alt="" class="w-full object-cover object-center"/>
             <h3 class="absolute bottom-0 text-center text-black text-4xl font-extrabold font-Neuton uppercase tracking-widest w-full rounded-[20px] bg-[rgb(166,158,158,0.5)] py-2">Rohani Islam</h3>
           </a>
       </section>
